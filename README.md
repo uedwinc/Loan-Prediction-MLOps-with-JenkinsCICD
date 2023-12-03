@@ -55,3 +55,19 @@
 - If you are not prompted for your username and password, your credentials may be cached in your machine.
 
 3. Create a webhook on the GitHub repository
+
+- Go to your GitHub repo | Settings | Webhooks.
+
+    - For me: https://github.com/uedwinc/Loan-Prediction-MLOps-with-JenkinsCICD/settings/hooks
+
+- Provide a payload URL (http://jenkins-ip:8080/github-webhook/)
+
+- Select the Content type as an application/json format. The Secret field is optional. Let’s leave it blank for now.
+
+- Check 'Just the push event' and click to Add Webhook.
+
+4. Configure Jenkins for Webhook and Email Integration
+
+- Install Git. Github and Email Extension plugins
+
+5. Create CI/CD pipeline using Jenkins
